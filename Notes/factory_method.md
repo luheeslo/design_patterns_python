@@ -1,0 +1,3 @@
+- No desempenho de suas funções, uma rotina precisará criar vários objetos em nome do chamador.
+- Pode existir um padrão razoável para qual classe usar para cada objeto, mas o padrão não cobre todos os casos possíveis.
+- Então, em vez de codificar essas classes padrão e impossibilitar a customização, a rotina deseja permitir que o chamador especifique quais classes serão instanciadas. 
