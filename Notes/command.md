@@ -16,3 +16,29 @@ O padrão Command trabalha com os seguintes termos:
 - O cliente cria um objeto **Command** e define seu **Receiver**. 
 
 ![alt text](https://www.carloscaballero.io/content/images/2019/05/uml.png)
+
+As principais intenções do padrão Command são as seguintes:
+
+- Encapsula uma requisição como objeto.
+- Permite parametrização dos clientes com diferentes requisições.
+- Permite salvar requisições em uma fila.
+
+O padrão Command pode ser usado nos seguintes cenários:
+
+- Parametrizar objetos dependendo da ação ser executada.
+- Adicionar ações para a fila e executar requisições em diferentes pontos.
+- Criar uma estrutura para operações em alto nível que são baseadas em pequenas operações.
+
+## Vantagens e Desvantagens
+
+Vantagens:
+
+- Desacopla as classes que invocam a operação do objeto que sabe como executar a operação.
+- Permite criar uma sequencia de comandos providenciado por um sistema de fila.
+- Extensões para adicionar um novo comando é fácil e pode ser feito sem mudar o código existente.
+- Pode definir um sistema de rollback com o padrão Command em um instalador, por exemplo.
+
+Desvantagens:
+
+- Vai existir um número alto de classes e objetos trabalhando juntos para atingir um objetivo. Deve-se tomar cuidado para desenvolver essas classes corretamente.
+- Cada comando individual é uma classe *ConcreteCommand* que aumenta o volume de classes que devem ser implementadas e mantidas.
