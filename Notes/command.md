@@ -11,6 +11,8 @@
 O padrão Command trabalha com os seguintes termos:
 
 - Um objeto **Command** que sabe sobre os objetos **Receiver** e invocam o método do objeto Receiver.
-- Valores para parâmetros do método do receptor(**Receiver**) são carregados no objeto Command.
+- Valores para parâmetros do método do receptor(**Receiver**) são carregados no objeto Command. O Receiver sabe como realizar as operações associadas à realização da solicitação.
 - O **Invoker** sabe como executar a commando.
 - O cliente cria um objeto **Command** e define seu **Receiver**. 
+
+![alt text](https://www.carloscaballero.io/content/images/2019/05/uml.png)
